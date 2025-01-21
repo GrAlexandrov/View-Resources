@@ -97,12 +97,14 @@
                 app:hintTextAppearance="@style/Theme.TextView.FontRobotoRegular.12.ColorOnSurfaceVariant"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/filledTextPhone"
-                app:layout_constraintTop_toBottomOf="@+id/filledTextName">
+                app:layout_constraintTop_toBottomOf="@+id/filledTextName"
+                >
 
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Mobile"
+                    android:text="@string/mobile"
+                    android:hint="@string/Select_phone"
                     android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -123,7 +125,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="123, Lenin street, Apt.6"
+                    android:text="@string/_123_lenin_street_apt_6"
                     android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -144,7 +146,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tokyo"
+                    android:text="@string/tokyo"
                     android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -165,7 +167,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Australia"
+                    android:text="@string/australia"
                     android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -187,7 +189,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Birthday"
+                    android:text="@string/birthday"
                     android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -211,7 +213,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Loves burgers and french fries"
+                    android:text="@string/loves_burgers_and_french_fries"
                     android:textAppearance="@style/Theme.TextView.FontRobotoRegular.16.ColorOnSurface" />
             </com.google.android.material.textfield.TextInputLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
