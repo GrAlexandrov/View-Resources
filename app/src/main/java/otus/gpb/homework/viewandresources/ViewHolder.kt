@@ -4,7 +4,6 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.textfield.TextInputLayout
 
 class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
     private val title: TextView by lazy { view.findViewById(R.id.textViewTitle) }
@@ -14,7 +13,10 @@ class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
     private val photo: ImageView by lazy { view.findViewById(R.id.photo) }
     fun bind(item: Item) {
         title.text = item.title
-        price.text = "$" + item.price.toString()
+        price.text = buildString {
+            append("$")
+            append(item.price.toString())
+        }
         category.text = item.category
         description.text = item.description
         photo.setImageResource(item.photo)

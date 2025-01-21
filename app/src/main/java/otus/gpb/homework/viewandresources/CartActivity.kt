@@ -4,10 +4,8 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.textfield.TextInputLayout
 
 class CartActivity : AppCompatActivity() {
     private val adapter: AdapterCart by lazy { AdapterCart() }
@@ -21,7 +19,10 @@ class CartActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
         adapter.setData(generate())
         findViewById<TextView>(R.id.filledTextCounter).text =
-            adapter.itemCount.toString() + " items in your cart"
+            buildString {
+                append(adapter.itemCount.toString())
+                append(" items in your cart")
+            }
         findViewById<View>(R.id.close).setOnClickListener { finish() }
 
 

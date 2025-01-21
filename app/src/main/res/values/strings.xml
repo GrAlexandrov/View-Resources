@@ -3,7 +3,7 @@
     <string name="name">name</string>
     <string name="select">Select</string>
     <string name="phone">Phone</string>
-    <string name="adress">Adress</string>
+    <string name="adress">Address</string>
     <string name="date">Date</string>
     <string name="notes">Notes</string>
     <string name="city">City</string>
@@ -26,4 +26,11 @@
     <string name="clip">clip</string>
     <string name="more">more</string>
     <string name="cancel">Cancel</string>
+    <string name="ivan_petrov">Ivan Petrov</string>
+    <string name="_1_234_567_8900">+1(234)567-8900</string>
+    <string name="password_string">Password</string>
+    <string name="_175_50">$175.50</string>
+    <string name="_140">$140</string>
+    <string name="_25">$25</string>
+    <string name="_10_50">$10.50</string>
 </resources>

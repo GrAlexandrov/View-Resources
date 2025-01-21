@@ -1,6 +1,5 @@
 package otus.gpb.homework.viewandresources
 
-import android.graphics.drawable.ColorDrawable
 
 data class Item(
     val title: String,
